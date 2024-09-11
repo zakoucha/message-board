@@ -1,0 +1,10 @@
+{% block title %}All posts{% endblock title%}
+{% block content %}
+    <ul>
+    {% for post in posts %}
+        <li>
+       <p> {{ post.text }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock content %}
